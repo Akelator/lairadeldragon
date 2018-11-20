@@ -1,4 +1,3 @@
-import { Jugador, Juego, Jugadores } from './../models/juego';
 import { Injectable, OnDestroy } from '@angular/core';
 import { Socket } from 'ngx-socket-io';
 
@@ -16,9 +15,6 @@ export class SocketsService implements OnDestroy {
     this.socket.connect();
     this.socket.on('games', games => {
       this.games = [];
-      games.forEach(g => {
-        this.games.push(new Juego(g.id, new Jugadores(g.jugadores.rojo, g.jugadores.azul)));
-      });
     });
   }
 

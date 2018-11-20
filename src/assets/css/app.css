@@ -1,0 +1,33 @@
+@Import url('./assets/css/colors.css');
+
+::ng-deep body {
+  font-size: 12pt;
+  font-family: Prociono;
+  background: var(--black);
+  color: var(--white)
+}
+
+::ng-deep button {
+  font-size: 16pt;
+  font-family: Prociono;
+  cursor: pointer;
+  padding: 15px 30px 15px 30px;
+  background: rgb(50, 40, 0);
+  color: rgb(255, 255, 225);
+  border: 3px solid white;
+  border-image-source: linear-gradient(to bottom, rgb(225, 210, 125), rgb(170, 130, 70) );
+  border-image-slice: 1;
+  box-sizing: border-box;
+  outline: 0 !important;
+  transition: all ease 0.3s;
+
+}
+
+::ng-deep button:hover {
+  color: rgb(255, 255, 255);
+  border: 3px solid rgb(225, 210, 125);
+  box-shadow: 0 0 10px 1px rgb(255, 255, 225), 0 0 30px 0 rgb(255, 255, 195), inset 0 0 30px 0 rgb(255, 255, 165);
+  text-shadow: 0px 0px 15px rgb(255, 255, 195), 0px 0px 5px rgb(255, 255, 195);
+  transition: all ease 0.3s;
+
+}
