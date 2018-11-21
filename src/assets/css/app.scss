@@ -1,0 +1,10 @@
+@import 'colors.scss';
+@import 'buttons.scss';
+@import 'fonts.scss';
+
+::ng-deep body {
+  font-size: 12pt;
+  font-family: Prociono;
+  background: $black;
+  color: $white;
+}

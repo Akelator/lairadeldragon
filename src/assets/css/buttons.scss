@@ -1,0 +1,23 @@
+::ng-deep button {
+  font-size: 16pt;
+  font-family: Prociono;
+  padding: 15px 30px 15px 30px;
+  background: $gold-1;
+  color: $gold-6;
+  border: 3px solid white;
+  border-image-source: linear-gradient(to bottom, $gold-3, $gold-2);
+  border-image-slice: 1;
+  box-sizing: border-box;
+  outline: 0 !important;
+  transition: all ease 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    color: $white;
+    border: 3px solid $gold-3;
+    box-shadow: 0 0 10px 1px $white, 0 0 30px 0 $gold-5, inset 0 0 30px 0 $gold-4;
+    text-shadow: 0px 0px 15px $gold-5, 0px 0px 5px $gold-5;
+
+  }
+
+}
